@@ -1,4 +1,4 @@
-# Modify default IP（修改wan口IP）
+# Modify default IP（修改wan口IP） 本地编译时在文件的第150行左右
 sed -i 's/192.168.1.1/192.168.68.1/g' package/base-files/files/bin/config_generate
 
 # Modify default theme（设置默认主题）
