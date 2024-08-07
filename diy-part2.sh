@@ -10,5 +10,5 @@ sed -i 's/OpenWrt/QWrt/g' package/base-files/files/bin/config_generate
 # 设置wan口上网方式为PPPOE
 sed -i 's/2:-dhcp/2:-pppoe/g' package/base-files/files/lib/functions/uci-defaults.sh
 
-# 设置PPPOE上网的账号和密码
-sed -i 's/username='"'"'username'"'"'/username='"'"'403'"'"'/g; s/password='"'"'password'"'"'/password='"'"'8888'"'"'/g' ./package/base-files/files/bin/config_generate
+# 设置PPPOE上网的账号和密码,本地编译时在文件的第182和183行左右
+sed -i 's/username='"'"'username'"'"'/username='"'"'403'"'"'/g; s/password='"'"'password'"'"'/password='"'"'8888'"'"'/g' package/base-files/files/bin/config_generate
