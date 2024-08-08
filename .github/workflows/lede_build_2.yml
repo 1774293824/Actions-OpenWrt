@@ -115,7 +115,7 @@ jobs:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
-    - name: Delete workflow runs
+    - name: Delete workflow runs【删除指定天数(0)前的工作流，但是保留最少保留最新的两个记录)】
       uses: Mattraks/delete-workflow-runs@main
       with:
         retain_days: 0
